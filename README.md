@@ -16,7 +16,7 @@ It also publishes the IMU, magnetometer and navigation (attitudes, velocities, p
 
 This package cpntains node (ardrone_test_node - with code in waypoint_nav.cpp file) that contains subscribers that subscribe to all the above topics published by the ardrone_autonomy node. This data (accelerometer, magnetometer, gyroscope, camera, gps, etc) can then be processed in this node. 
 
-This node also contains publishers that publish takeoff, land and drone control commands to /ardrone/takeoff, /ardrone/land and /cmd_vel topics. These publishers can be utilised through takeoff(), land() and move(lx,ly,lz,rx,ry,rz) fucntions. For simplicity and ease of use, running this node will open up a menu allowing you to press keyboard buttons to takeoff, land and perform basic movements (left, right, up, down, yaw). (https://drive.google.com/open?id=0B3_gyQ1dIf-QTmE5Z200Y3JmVGc)
+This node also contains publishers that publish takeoff, land and drone control commands to /ardrone/takeoff, /ardrone/land and /cmd_vel topics. These publishers can be utilised through takeoff(), land() and move(lx,ly,lz,rx,ry,rz) fucntions. For simplicity and ease of use, running this node will open up a menu allowing you to press keyboard buttons to takeoff, land and perform basic movements (left, right, up, down, yaw). 
 
 ![Alt text](https://raw.github.com/kaustubhsridhar/AR.Drone-basic-control/master/basic_menu.png "menu shown on running ardrone_test_node node")
 
