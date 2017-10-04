@@ -22,11 +22,7 @@ This node also contains publishers that publish takeoff, land and drone control 
 
 ##### All further code (to manipulate drone some way by sending control commands) shall be written here in ardrone_test_node (i.e. inside waypoint_nav.cpp file)
 
-### 3. tum_ardrone [used only drone_gui node] (downloaded)
-
-Running this node will open a simple GUI for controlling the drone (i.e. move up, down, left, right, takeoff and land). This GUI is an alternate option to perform basic movements and to land in case of emergencies. (http://wiki.ros.org/tum_ardrone/drone_gui)
-
-### 4. tum_simulator (downloaded)
+### 3. tum_simulator (downloaded)
 
 This package contains the implementation of a gazebo simulator for the Ardrone 2.0 . (http://wiki.ros.org/tum_simulator)
 
@@ -43,15 +39,6 @@ cd catkin_ws/
 git clone https://github.com/kaustubhsridhar/AR.Drone-nonlinear-control-Gazebo-Simulation.git
 ```
 (note that the src folder should be directly in the catkin_ws folder. delete any unnecessary folder created by git cloning)
-```
-catkin_make --pkg ardrone_autonomy
-```
-```
-catkin_make --pkg ardrone_test
-```
-```
-catkin_make --pkg tum_ardrone
-```
 
 ## Builidng the code 
 Run the following code lines in a terminal
@@ -73,9 +60,6 @@ rosrun ardrone_autonomy ardrone_driver _navdata_demo:=0
 ```
 rosrun ardrone_test ardrone_test_node
 ```
-```
-rosrun tum_ardrone drone_gui
-```
 ## Running a simulation of AR.Drone 2.0 on Gazebo
 Run the following code lines in different terminals
 
@@ -87,7 +71,4 @@ roslaunch cvg_sim_gazebo ardrone_testworld.launch
 ```
 ```
 rosrun ardrone_test ardrone_test_node
-```
-```
-rosrun tum_ardrone drone_gui
 ```
