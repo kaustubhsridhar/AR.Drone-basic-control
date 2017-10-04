@@ -69,6 +69,9 @@ rosrun ardrone_autonomy ardrone_driver _navdata_demo:=0
 ```
 rosrun ardrone_test ardrone_test_node
 ```
+```
+rosrun tum_ardrone drone_gui
+```
 ## Running a simulation of AR.Drone 2.0 on Gazebo
 Run the following code lines in different terminals
 
@@ -80,4 +83,7 @@ roslaunch cvg_sim_gazebo ardrone_testworld.launch
 ```
 ```
 rosrun ardrone_test ardrone_test_node
+```
+```
+rosrun tum_ardrone drone_gui
 ```
