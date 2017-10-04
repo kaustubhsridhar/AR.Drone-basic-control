@@ -1,11 +1,11 @@
 # AR.Drone basic control
-This repository contains 4 ROS packages. 
+This repository contains 3 ROS packages. 
 
-Three have been downloaded - ardrone_autonomy, tum_ardrone and tum_simulator. 
+Two have been downloaded - ardrone_autonomy and tum_simulator. 
 
 One was created by me - ardrone_test.
 
-## Description of contents of 4 packages
+## Description of contents of the 3 packages
 ### 1. ardrone_autonomy (downloaded)
 
 this package connects the entire AR Drone system to the ROS environment giving you the control of the motion of the drone (by sunscribing to topics like /ardrone/takeoff, /ardrone/land, /cmd_vel to which you can publish takeoff, land and control commands resp.)
