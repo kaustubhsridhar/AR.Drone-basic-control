@@ -22,6 +22,10 @@ This node also contains publishers that publish takeoff, land and drone control 
 
 ##### All further code (to manipulate drone some way by sending control commands) shall be written here in ardrone_test_node (i.e. inside waypoint_nav.cpp file)
 
+### 3. tum_ardrone [used only drone_gui node] (downloaded)
+
+Running this node will open a simple GUI for controlling the drone (i.e. move up, down, left, right, takeoff and land). This GUI is an alternate option to perform basic movements and to land in case of emergencies. (http://wiki.ros.org/tum_ardrone/drone_gui)
+
 ### 4. tum_simulator (downloaded)
 
 This package contains the implementation of a gazebo simulator for the Ardrone 2.0 . (http://wiki.ros.org/tum_simulator)
