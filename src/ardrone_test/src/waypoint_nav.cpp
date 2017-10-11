@@ -32,8 +32,8 @@ ros::Publisher velocity_publisher;		// velocity publisher
 
 // Variables for Subscribing
 ros::Subscriber pose_subscriber;		// ardrone navdata subsciber
-ros::Subscriber gps_subscriber;		// ardrone navdata subsciber
-ros::Subscriber imu_subscriber;		// ardrone navdata subsciber
+ros::Subscriber gps_subscriber;		// ardrone gps data subsciber
+ros::Subscriber imu_subscriber;		// ardrone imu data subsciber
 
 // Variables for Service
 ros::ServiceClient client1;		// ardrone camera service
