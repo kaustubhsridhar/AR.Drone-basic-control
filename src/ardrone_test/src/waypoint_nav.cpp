@@ -84,9 +84,7 @@ void hover(int timee);		// hovering
 void takeoff();		// take off
 void land();		//landing
 void move(float lx, float ly, float lz, float ax, float ay, float az ); // publishing command velocity
-void moveup(double z_d);
 // Basic Navigation func
-void yawing(double angle);				// yawing movements
 void basic_movement();
 
 
@@ -460,27 +458,4 @@ void record()
 		}while(i<10000);
 		myfile.close();
 		land();
-}
-
-void yawing(double angle)
-{
-	angle = angle + drone_navdata.rotZ;
-
-		double error;
-		ros::Rate loop_rate(10);
-		do{
-
-			//velocity_publisher.publish(vel_msg);
-
-			error = (angle - drone_navdata.rotZ);
-			cout<< "Yawwwwwwwwwwwwwww"<<drone_navdata.rotZ<<endl;
-			vel_msg.angular.z = 0.1 * deg2rad(error);
-
-			ros::spinOnce(); //if this function is not mentioned the function will stay in the buffer and cannot be able to publish
-			loop_rate.sleep();
-
-		}while((abs(error) > 5) && (ros::ok()));
-
-		vel_msg.angular.z = 0;
-		velocity_publisher.publish(vel_msg);
 }
