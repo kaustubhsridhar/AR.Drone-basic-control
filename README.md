@@ -52,6 +52,10 @@ cd catkin_ws/
 ```
 catkin_make
 ```
+Run the below line only once (after the first compilation). It adds the workspace to the search path.
+```
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc 
+```
 ## Running the code on the actual AR.Drone 2.0
 Run the following code lines in different terminals
 
