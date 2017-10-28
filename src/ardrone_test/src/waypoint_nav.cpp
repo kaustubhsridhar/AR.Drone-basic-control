@@ -159,11 +159,11 @@ cout<<"landed";
 void basic_movement(){
 ros::Rate loop_rate(10);
 int exit_val=0;
-
-while(exit_val==0){
 cout<<"Press any key"<<endl;
 cout<<"q |up|       i        |forward|             e |exit to prev menu|"<<endl;
 cout<<"a |down|    jkl  |left|  back |right|       s |land| other |hover|"<<endl;
+	
+while(exit_val==0){
 int l = getch(); //calling non blocking input fucntion
 int sval=0.5;
 
